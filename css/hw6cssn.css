@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    max-width: 100%;
+    min-height: 37px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 30px;
+    font-style: bold;
+    color: #95E1D3;
+    text-decoration: none;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-menu-item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav-menu-item a {
+    color: #95E1D3;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+}
+
+.nav-menu-item a:hover {
+    color: #F38181;
+    text-decoration: underline;
+    text-decoration-style: bold;
+    cursor: pointer;
+}
+
+.nav-menu-item:last-child {
+    margin-right: 0;
+}
+
+.text-before-first-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+main {
+    max-width: 100%;
+}
+
+.services {
+    padding-top: 24px;
+    margin-bottom: 24px;
+}
+
+.services-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.services-list {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.services-list-item p {
+    font-size: 15px;
+    width: 250px;
+    color: #999999;
+    min-height: min-content;
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-list-item {
+    width: 330px;
+    list-style: none;
+}
+
+.services-list-link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333
+}
+
+.services-list-link::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.photography::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/alarm.png);
+}
+
+.design::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/line-graph.png);
+}
+
+.creativity::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/computer.png);
+}
+
+.seo::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/book.png);
+}
+
+.css::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/home.png);
+}
+
+.digital::before {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/image.png);
+}
+
+.team {
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 24px;
+    margin-bottom: 200px;
+}
+
+.about-team {
+    max-width: 941px;
+    font-size: 15px;
+    color: #999999;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-before-second-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 0;
+}
+
+.title-second-section {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.title-second-section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.team-list {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.team-list-item-color {
+    background-color: #95E1D3;
+    font-size: 0px;
+}
+
+.img-wrapper::before {
+    content: "";
+    width: 380px;
+    height: 470px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+
+.img-wrapper:hover::before {
+    background: linear-gradient(#ed8889, #f4ad8e, #fce38a);
+}
+
+.img-wrapper:hover>button {
+    display: block;
+    width: 56px;
+    height: 56px;
+    display: inline;
+    background-color: #fce38a;
+    margin-right: 4px;
+    border: none;
+    transition: all 200ms linear;
+}
+
+.img-wrapper:hover>button:hover {
+    background-color: #95e1D3;
+}
+
+.img-wrapper {
+    transition: all 200ms linear;
+}
+
+.img-wrapper:hover {
+    transform: translate(-15px, -15px);
+}
+
+.team-list-item p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    margin-top: 0px;
+}
+
+.team-list-item h4 {
+    color: #333333;
+}
+
+.team-list-item {
+    position: relative;
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social-button {
+    display: none;
+    outline: none;
+    cursor: pointer;
+    top: 207px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/facebook.png);
+    left: 70px;
+}
+
+.twitter {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/twitter.png);
+    left: 131px;
+}
+
+.pinterest {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/pinterest.png);
+    left: 192px;
+}
+
+.instagram {
+    background-image: url(https://drapaliuk.github.io/goit-fe-cource/html-css/module-06/img6/instagram.png);
+    left: 253px;
+}
+
+.team-list-item>h4,
+p {
+    text-align: center;
+}
+
+.page-footer {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 100%;
+    min-height: 51px;
+    margin: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+form {
+    font-size: 0;
+}
+
+.email {
+    width: 230px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+}
+
+.button-submit {
+    width: 150px;
+    height: 40px;
+    background-color: #95E1D3;
+    margin-left: 0;
+    border: none;
+    border: 1px solid #95E1D3;
+    box-sizing: content-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+}
+
+.autor-link {
+    color: #f38181;
+    text-decoration: none;
+}
